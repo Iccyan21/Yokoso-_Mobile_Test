@@ -51,6 +51,9 @@
 		471E48002BD60A59008B0AE7 /* Yokoso!_Mobile_Test */ = {
 			isa = PBXGroup;
 			children = (
+				471E481D2BDA2EB0008B0AE7 /* Event */,
+				471E481C2BDA2EA5008B0AE7 /* Word_Manner */,
+				471E481B2BDA2EA0008B0AE7 /* Map */,
 				471E48012BD60A59008B0AE7 /* Yokoso__Mobile_TestApp.swift */,
 				471E48032BD60A59008B0AE7 /* ContentView.swift */,
 				471E48052BD60A5B008B0AE7 /* Assets.xcassets */,
@@ -65,6 +68,27 @@
 				471E48082BD60A5B008B0AE7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		471E481B2BDA2EA0008B0AE7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		471E481C2BDA2EA5008B0AE7 /* Word_Manner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Word_Manner;
+			sourceTree = "<group>";
+		};
+		471E481D2BDA2EB0008B0AE7 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
