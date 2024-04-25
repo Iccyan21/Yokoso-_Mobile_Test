@@ -11,6 +11,9 @@
 		471E48042BD60A59008B0AE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E48032BD60A59008B0AE7 /* ContentView.swift */; };
 		471E48062BD60A5B008B0AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471E48052BD60A5B008B0AE7 /* Assets.xcassets */; };
 		471E48092BD60A5B008B0AE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471E48082BD60A5B008B0AE7 /* Preview Assets.xcassets */; };
+		471E481F2BDA2F2E008B0AE7 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E481E2BDA2F2E008B0AE7 /* EventView.swift */; };
+		471E48212BDA2F3F008B0AE7 /* Word_Manner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E48202BDA2F3F008B0AE7 /* Word_Manner.swift */; };
+		471E48232BDA2F4B008B0AE7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E48222BDA2F4B008B0AE7 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		471E48032BD60A59008B0AE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		471E48052BD60A5B008B0AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		471E48082BD60A5B008B0AE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		471E481E2BDA2F2E008B0AE7 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		471E48202BDA2F3F008B0AE7 /* Word_Manner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_Manner.swift; sourceTree = "<group>"; };
+		471E48222BDA2F4B008B0AE7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		471E481B2BDA2EA0008B0AE7 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				471E48222BDA2F4B008B0AE7 /* MapView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -80,6 +87,7 @@
 		471E481C2BDA2EA5008B0AE7 /* Word_Manner */ = {
 			isa = PBXGroup;
 			children = (
+				471E48202BDA2F3F008B0AE7 /* Word_Manner.swift */,
 			);
 			path = Word_Manner;
 			sourceTree = "<group>";
@@ -87,6 +95,7 @@
 		471E481D2BDA2EB0008B0AE7 /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				471E481E2BDA2F2E008B0AE7 /* EventView.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -161,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471E48212BDA2F3F008B0AE7 /* Word_Manner.swift in Sources */,
+				471E481F2BDA2F2E008B0AE7 /* EventView.swift in Sources */,
+				471E48232BDA2F4B008B0AE7 /* MapView.swift in Sources */,
 				471E48042BD60A59008B0AE7 /* ContentView.swift in Sources */,
 				471E48022BD60A59008B0AE7 /* Yokoso__Mobile_TestApp.swift in Sources */,
 			);
