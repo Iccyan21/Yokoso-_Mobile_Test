@@ -8,16 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // タブの選択項目を保持する
+    @State var selection = 1
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+        
+        TabView(selection: $selection) {
+            
+            Word_Manner()  //✅ 1つ目のページをTabViewに配置
+                .tabItem { // ⬅︎
+                    Label("Word", systemImage: "1.circle")
+                }
+                .tag(1) // ⬅︎
+            
+            MapView()  //✅ 2つ目のページをTabViewに配置
+                .tabItem {
+                    Label("MAP", systemImage: "2.circle")
+                }
+                .tag(2)
+            
+            EventView()  //✅ 3つ目のページをTabViewに配置
+                .tabItem {
+                    Label("Evnet", systemImage: "3.circle")
+                }
+                .tag(3)
+            
+        } // TabView ここまで
+    } // body
+} // View
+
 
 #Preview {
     ContentView()
