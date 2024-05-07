@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// Identifiableプロトコルを利用して、お菓子の情報をまとめる構造体
+// Identifiableプロトコルを利用して、構造体
 struct EventItem: Identifiable {
     let id = UUID()
     let name: String
@@ -21,7 +21,7 @@ struct EventItem: Identifiable {
     struct ResultJson: Codable {
         // JSONのitem内のデータ構造
         struct Item: Codable {
-            // お菓子の名称
+            // イベントの名称
             let name: String?
             //イベントの詳細
 //            let details: String?
@@ -35,7 +35,7 @@ struct EventItem: Identifiable {
         let item: [Item]?
     } // ResultJson ここまで
 
-    // お菓子のリスト（Identifiableプロトコル）
+    // イベントのリスト（Identifiableプロトコル）
     var eventList: [EventItem] = []
             
     // Web API検索用メソッド　第一引数：keyword 検索したいワード
@@ -51,7 +51,7 @@ struct EventItem: Identifiable {
         } // Task ここまで
     } // searchここまで
 
-    // 非同期でお菓子データを取得
+    // 非同期でイベントデータを取得
     // @MainActorを使いメインスレッドで更新する
     @MainActor
     private func search(keyword: String) async {
@@ -79,9 +79,9 @@ struct EventItem: Identifiable {
             // print(json)
             print(json)
 
-            // お菓子の情報が取得できているか確認
+            // イベントの情報が取得できているか確認
             guard let items = json.item else { return }
-            // お菓子のリストを初期化
+            // イベントのリストを初期化
             eventList.removeAll()
             
             // 取得しているお菓子の数だけ処理
