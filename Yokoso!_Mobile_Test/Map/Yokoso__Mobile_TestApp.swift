@@ -11,7 +11,7 @@ import SwiftUI
 struct Yokoso__Mobile_TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            testui()
         }
     }
 }
